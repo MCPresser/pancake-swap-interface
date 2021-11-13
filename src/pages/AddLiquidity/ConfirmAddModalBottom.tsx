@@ -38,7 +38,7 @@ export function ConfirmAddModalBottom({
         </RowFixed>
       </RowBetween>
       <RowBetween>
-        <Text>Rates</Text>
+        <Text>Muscle Rates</Text>
         <Text>
           {`1 ${currencies[Field.CURRENCY_A]?.symbol} = ${price?.toSignificant(4)} ${
             currencies[Field.CURRENCY_B]?.symbol
@@ -53,7 +53,7 @@ export function ConfirmAddModalBottom({
         </Text>
       </RowBetween>
       <RowBetween>
-        <Text>Share of Pool:</Text>
+        <Text>Share of Muscle Pool:</Text>
         <Text>{noLiquidity ? '100' : poolTokenPercentage?.toSignificant(4)}%</Text>
       </RowBetween>
       <Button mt="20px" onClick={onAdd}>
